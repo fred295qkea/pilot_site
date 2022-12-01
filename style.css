@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "hhenumregular";
+  src: url("webfontkit-20221201-065602/hhenum-regular-webfont.woff2") format("woff2"), url("webfontkit-20221201-065602/hhenum-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+}
+
+h1 {
+  font-family: "hhenumregular";
+
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "hhenumregular";
+
+  color: white;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  border-top: 4px solid white;
+  border-bottom: 4px solid white;
+}
+
+#teaser {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 25px;
+}
+
+#teaser_text {
+  font-family: "hhenumregular";
+
+  color: white;
+  display: inline-block;
+  text-align: center;
+  place-self: center;
+  grid-area: 1/1/2/9;
+  font-size: 4rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+#box1 {
+  background-color: rgb(90, 90, 90);
+  grid-area: 2/3/4/5;
+  background-image: url(img/IMG_0494.webp);
+  background-size: cover;
+  aspect-ratio: 4/3;
+  transition: all 0.2s ease-in-out;
+  border-radius: 15px;
+}
+#box2 {
+  background-color: rgb(90, 90, 90);
+  grid-area: 2/5/4/7;
+  background-image: url(img/IMG_0523.webp);
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+  border-radius: 15px;
+}
+
+#box3 {
+  background-color: rgb(90, 90, 90);
+  grid-area: 4/3/6/5;
+  background-image: url(img/IMG_0524.webp);
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+  border-radius: 15px;
+}
+#box4 {
+  background-color: rgb(90, 90, 90);
+  grid-area: 4/5/6/7;
+  background-image: url(img/IMG_0525.webp);
+  background-size: cover;
+  transition: all 0.2s ease-in-out;
+  border-radius: 15px;
+}
+
+#box1:hover {
+  scale: 1.2;
+}
+#box2:hover {
+  scale: 1.2;
+}
+#box3:hover {
+  scale: 1.2;
+}
+#box4:hover {
+  scale: 1.2;
+}
+
+#starring {
+  font-family: "hhenumregular";
+
+  color: white;
+  grid-area: 6/4/6/6;
+  text-align: center;
+  place-self: center;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+#trailer {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+#trailer_text {
+  font-family: "hhenumregular";
+
+  color: white;
+  display: inline-block;
+  text-align: center;
+  place-self: center;
+  font-size: 4rem;
+  font-weight: 500;
+  text-decoration: underline;
+  grid-area: 1/4/2/6;
+}
+
+#video {
+  grid-area: 2/3/6/7;
+  background-color: grey;
+  object-fit: cover;
+}
